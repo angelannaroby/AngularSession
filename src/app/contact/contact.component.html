@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
     <h1>Registration</h1>
 <form method="get" action='#'>
 <div class="form-group">
@@ -21,4 +21,38 @@
 </div>
   <button type="submit" class="btn btn-primary mb-2">Submit</button>
 </form>
+</div> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col col-sm-3"></div>
+        <div class="col col-sm-6">
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+      <table class="table">
+        <tr>
+        <td>Name</td>
+        <td><input type="text" class="form-control" name="name" ngModel></td>
+      </tr>
+      <tr>
+          <td>Email</td>
+          <td><input type="text" class="form-control" name="email" ngModel></td>
+        </tr>
+        <tr>
+            <td>Mobile No</td>
+            <td><input type="text" class="form-control" name="mobile" ngModel></td>
+          </tr>
+        <tr>
+            <td>Message</td>
+            <textarea name="message" cols="40" rows="5" ngModel></textarea>
+          </tr>
+          <tr>
+            <td>
+              <button type="submit" class="btn-btn-info">Submit</button>
+            </td>
+          </tr>
+      </table>
+    </form>
+    </div>
+    <div class="col col-sm-3"></div>
+  </div>
 </div>
